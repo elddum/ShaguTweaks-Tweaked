@@ -2,14 +2,15 @@ local _G = ShaguTweaks.GetGlobalEnv()
 local T = ShaguTweaks.T
 
 local module = ShaguTweaks:register({
-  title = T["Attach Tooltip to Cursor"],
-  description = T["Attaches tooltip to cursor"],
+  title = T["Tweaked Tooltips"],
+  description = T["Attaches tooltip to cursor."],
   expansions = { ["vanilla"] = true, ["tbc"] = nil },
-  category = T["|cffffcc00Shagu|cffffffffTweaks Tweaked"],
+  category = T["|cffffcc00Shagu|cffffffffTweaks Tweaked by |cffffcc00Muddle"],
   enabled = false,
 })
 
 module.enable = function(self)  
+  
   GameTooltip_SetDefaultAnchor = function(t,p) 
     t:SetOwner(p,"ANCHOR_CURSOR")    
     x, y = GetCursorPosition()
@@ -17,5 +18,7 @@ module.enable = function(self)
     t:ClearAllPoints()
     t:SetPoint("BOTTOMLEFT", UIParent, x/scale, y/scale+25)
   end  
-  --  GameTooltip:SetScale(.9)
+  
+  GameTooltip:SetScale(.95)
+
 end

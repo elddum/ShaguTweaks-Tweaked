@@ -4,10 +4,10 @@ local UnitCastingInfo = ShaguTweaks.UnitCastingInfo
 local UnitChannelInfo = ShaguTweaks.UnitChannelInfo
 
 local module = ShaguTweaks:register({
-  title = T["Castbars On Top"],
-  description = T["Moves castbars above player and target unit frames."],
+  title = T["Tweaked Castbars"],
+  description = T["Position cast bars above unit frames."],
   expansions = { ["vanilla"] = true, ["tbc"] = nil },
-  category = T["|cffffcc00Shagu|cffffffffTweaks Tweaked"],
+  category = T["|cffffcc00Shagu|cffffffffTweaks Tweaked by |cffffcc00Muddle"],
   enabled = false,
 })
 

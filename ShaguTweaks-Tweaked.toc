@@ -1,10 +1,10 @@
 ## Interface: 11200
-## Title: |cffffcc00Shagu|cffffffffTweaks Tweaked
+## Title: |cffffcc00Shagu|cffffffffTweaks Tweaked by |cffffcc00Muddle
 ## Author: Elddum
-## Notes: A collection of tweaks for ShaguTweaks
+## Notes: A collection of minor tweaks for ShaguTweaks
 ## Dependencies: ShaguTweaks
 
-general-chat.lua
-player-castbar.lua
-scaled-actionbar.lua
-tooltip-actionbar.lua
+chat.lua
+castbars.lua
+actionbars.lua
+tooltip.lua
